@@ -1,0 +1,9 @@
+[[redirects]]
+  from = "/proxy/*"
+  to = "https://httpbin.org"
+  status = 200
+  force = true
+
+  [redirects.headers]
+    X-Proxy-Agent = "Netlify-Custom-Edge-Proxy"
+    Accept = "application/json"
